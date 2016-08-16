@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+          body{
+            background-color: #EBEBEB;
+            font-size:14px;
+          }
+          .clr{
+            clear:both;
+          }
+          #head{
+              padding:66px 0;
+              background:url('img/fcb3879e14429d75833a461572e64.jpg') center 20% no-repeat;
+              background-size:cover;
+          }
+         .navbar{
+              background-color: #fff;
+              border-bottom:2px solid #e1e1e1;
+              border-top:1px solid #ebebeb;
+              margin-bottom:35px;
+          }
+          #navbar{
+              position:relative;
+          }
+          .navbar-default .navbar-toggle{
+              border-color:none!important;
+              margin:8px 0;
+          }
+          .jumbotron{
+              background-color: #fff;
+              padding-bottom: 30px;
+          }
+          #left .divider{
+              height: 1px;
+              background-color: #EBEBEB;
+          }
+          #left .container span{
+              margin-top:30px;
+              color:#ccc;
+          }
+          #right .panel-heading,#footer .panel-heading{
+              width: 88%;
+              padding-left:0;
+              border-bottom:1px solid #ebebeb;
+          }
+          #right .divider,#footer .divider{
+              width: 30%;
+              margin-left:6%;
+              margin-top:-1px;
+              height: 1px;
+              background-color: #E67E22;
+          }
+          .nav>li>a
+          {
+                padding:20px;
+                background-color:#fff;
+                color:#000;
+                border-bottom:1px solid transparent;
+          }
+          .nav>li>a:focus, .nav>li>a:hover{
+                background-color:#fff;
+                color:#E67E22;
+          }
+          .nav .active{
+                border-bottom:2px solid #E67E22;
+                margin-bottom:-2px;
+          }
+          .navbar-nav{
+              
+          }
+          .txt{
+            text-align: center;
+          }
+          #container .container{
+              padding-left:30px;
+              padding-right: 30px;
+          }
+          .jumbotron{
+              padding-top: 10px;
+          }
+          .jumbotron p{
+              margin-bottom:25px;
+          }
+          .img img{
+            width: 100%;
+            display:inline-block;
+            margin-bottom:25px;
+          }
+          #small,#small a{
+            color:#ccc;
+          }
+          #small{
+            display:inline-block;
+            margin-left:6px;
+          }
+          .txt h2{
+            font-weight: bold;
+          }
+          .jumbotron .txtP{
+              font-size:1.4em;
+          }
+          .panelBtn a{
+              width: 98%;
+              border-radius: 0;
+          }
+          .manyA a{
+              display:inline-block;
+              font-size:0.9em;
+              border:1px solid #ebebeb;
+              text-decoration: none;
+              color:#959595;
+              padding: 2px 5px;
+              margin:0 5px 5px 0;
+          }
+          #eight{
+            text-align: center;
+            margin-bottom:30px;
+          }
+          #eight a:first-child{
+              display:inline-block;
+              margin-right:5px;
+              cursor:text;
+          }
+          #footer{
+              background-color: #202020;
+              padding-top:30px;
+          }
+          #footer .container{
+              padding-left: 0;
+              padding-right:0;
+          }
+          #footer .panel{
+              float:left;
+              background-color: #202020;
+              color:#fff;
+              padding-left: 0;
+              padding-right:0;
+          }
+          #footer .panel-body{
+              padding-left:6%;
+          }
+          #left .jumbotron .btn{
+              border-radius: 0;
+          }
+    </style>
+  </head>
+  <body>
+        <div id="contain">
+          <div id="head">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <a href="http://www.ghostchina.com/"><img class="img-responsive center-block" src="img/4f5566c1f7bc28b3f7ac1fada8abe.png" alt=""></a>
+                      <img class="hide" src="img/fcb3879e14429d75833a461572e64.jpg" alt="">                        
+                    </div>
+                  </div>
+                </div>
+                
+          </div>
+            <nav class="navbar">
+                <div class="container">
+                  <div class="navbar-default">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  </div>
+                  <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">首页</a></li>
+                      <li><a href="#about">论坛</a></li>
+                      <li><a href="#contact">快捷手册</a></li>
+                      <li><a href="#contact">中文文档</a></li>
+                      <li><a href="#contact">下载</a></li>
+                      <li><a href="#contact">关于</a></li>
+                    </ul>
+                  </div><!--/.nav-collapse -->
+                </div>
+            </nav>
+          <div id="container">
+                <div id="left" class="col-md-7 col-md-offset-1">
+                      <div class="jumbotron">
+                        <div class="container">
+                          <div class="txt">
+                        <h2>Node.js v4 LTS 成为 Ghost 推荐版本</h2>
+                        <p><h5>作者<a href="#">王赛</a>.2016年7月26日</h5></p>
+                      </div>
+                      <p class="txtP">从这周起，我们将 Ghost 推荐 Node.js 版本升级为 Node.js v4 LTS。 我们这样做其实已经落后于计划了。然而，经过大量测试之后，我们确信 Ghost 可以在 Node.js v4 平台上流畅的运行并且内存消耗比原来也减少了。目前，Ghost(Pro) 上托</p>
+                        <p><a class="btn btn-warning" href="#" role="button">阅读全文</a></p>
+                        <div role="separator" class="divider"></div>
+                        <span class="glyphicon glyphicon-folder-open span-default"></span>
+                      </div>
+                    </div>
+                      <div class="jumbotron">
+                        <div class="container">
+                          <div class="txt">
+                        <h2>Ghost 桌面版 APP 正式发布，能同时管理多个 Ghost 博客</h2>
+                       <p><h5>作者<a href="#">王赛</a>.2016年7月26日</h5></p>
+                     </div>
+                         <div class="img">
+                        <a href="#"><img src="img/e447fa21190690b28f1957d5937f4.png" alt=""></a>
+                      </div>
+                      <p class="txtP">虽然通过浏览器管理 Ghost 博客虽然很方便，但是在多个 tab 之间切换有时候也会很麻烦，嗯，如果能有一个独立的 app 应该使用起来会更爽一些！ 今天的主角来了，Ghost 桌面版 APP -- Ghost Desktop！ 目前，Ghost Desktop 还处于早期阶段</p>
+                        <p><a class="btn btn-warning" href="#" role="button">阅读全文</a></p>
+                        <div role="separator" class="divider"></div>
+                        <span class="glyphicon glyphicon-folder-open span-default"></span>
+                      </div>
+                    </div>
+                      <div class="jumbotron">
+                        <div class="container">
+                        <div class="txt">
+                        <h2>Node.js v4 LTS 成为 Ghost 推荐版本</h2>
+                        <p><h5>作者<a href="#">王赛</a>.2016年7月26日</h5></p>
+                        
+                      </div>
+                      <p class="txtP">从这周起，我们将 Ghost 推荐 Node.js 版本升级为 Node.js v4 LTS。 我们这样做其实已经落后于计划了。然而，经过大量测试之后，我们确信 Ghost 可以在 Node.js v4 平台上流畅的运行并且内存消耗比原来也减少了。目前，Ghost(Pro) 上托</p>
+                        <p><a class="btn btn-warning" href="#" role="button">阅读全文</a></p>
+                        <div role="separator" class="divider"></div>
+                        <span class="glyphicon glyphicon-folder-open span-default"></span>
+                        <span id="small">
+                          <a href="#">Ghost</a>,
+                          <a href="#">新版本发布</a>,
+                          <a href="#">Ghost 0.7 版本</a>,
+                        </span>
+                      </div>
+                    </div>
+                      <div class="jumbotron">
+                        <div class="container">
+                          <div class="txt">
+                        <h2>Ghost 桌面版 APP 正式发布，能同时管理多个 Ghost 博客</h2>
+                       <p><h5>作者<a href="#">王赛</a>.2016年7月26日</h5></p>
+                     </div>
+                         <div class="img">
+                        <a href="#"><img src="img/e447fa21190690b28f1957d5937f4.png" alt=""></a>
+                      </div>
+                      <p class="txtP">虽然通过浏览器管理 Ghost 博客虽然很方便，但是在多个 tab 之间切换有时候也会很麻烦，嗯，如果能有一个独立的 app 应该使用起来会更爽一些！ 今天的主角来了，Ghost 桌面版 APP -- Ghost Desktop！ 目前，Ghost Desktop 还处于早期阶段</p>
+                        <p><a class="btn btn-warning" href="#" role="button">阅读全文</a></p>
+                        <div role="separator" class="divider"></div>
+                        <span class="glyphicon glyphicon-folder-open span-default"></span>
+                        <span id="small">
+                          <a href="#">Ghost</a>,
+                          <a href="#">新版本发布</a>,
+                          <a href="#">Ghost 0.7 版本</a>,
+                        </span>
+                      </div>
+                    </div>
+                      <div id="eight">
+                          <a class="btn btn-warning" href="#" role="button">第<span>1</span>页/总共<span>8</span>页</a>
+                          <a class="btn btn-warning" href="#" role="button">></a>
+                      </div>
+                </div>
+                <div id="right" class="col-md-3">
+                    <!-- <div class="page-header">
+                      <h6>Example page header <small>Subtext for header</small></h6>
+                    </div -->
+                    <div class="panel">
+                      <div class="panel-heading center-block">Panel heading without title</div>
+                      <div role="separator" class="divider"></div>
+                      <div class="panel-body">
+                        QQ群：277327792
+                        <div>
+                            <span class="fa fa-comments"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading center-block">Panel heading without title</div>
+                      <div role="separator" class="divider"></div>
+                      <div class="panel-body panelBtn">
+                        <a class="btn btn-warning" href="#" role="button">Ghost 中文版(0.7.4)</a>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading center-block">标签云</div>
+                      <div role="separator" class="divider"></div>
+                      <div class="panel-body manyA">
+                          <a href="#">JQuery</a>
+                          <a href="#">Ghost 0.7版本</a>
+                          <a href="#">开源</a>
+                          <a href="#">助手函数</a>
+                          <a href="#">标签云</a>
+                          <a href="#">导航</a>
+                          <a href="#">自定义页面</a>
+                          <a href="#">静态页面</a>
+                          <a href="#">Roon.io</a>
+                          <a href="#">配置文件</a>
+                          <a href="#">又拍云存储</a>
+                          <a href="#">上传</a>
+                          <a href="#">Handlebars</a>
+                          <a href="#">邮件</a>
+                          <a href="#">快捷键</a>
+                          <a href="#">用户指南</a>
+                          <a href="#">主题市场</a>
+                          <a href="#">新版本发布</a>
+                          <a href="#">...</a>
+                      </div>
+                    </div>
+                </div>
+          </div>
+          <div class="clr"></div>
+          <div id="footer">
+              <div class="container">
+                  <div class="panel col-md-4 col-xs-12">
+                      <div class="panel-heading center-block">标签云</div>
+                      <div role="separator" class="divider"></div>
+                      <div class="panel-body center-block">
+                        QQ群：277327792
+                        <div>
+                            <span class="fa fa-comments"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel col-md-4">
+                      <div class="panel-heading center-block">标签云</div>
+                      <div role="separator" class="divider"></div>
+                      <div class="panel-body manyA  center-block">
+                          <a href="#">JQuery</a>
+                          <a href="#">Ghost 0.7版本</a>
+                          <a href="#">开源</a>
+                          <a href="#">助手函数</a>
+                          <a href="#">标签云</a>
+                          <a href="#">导航</a>
+                          <a href="#">自定义页面</a>
+                          <a href="#">静态页面</a>
+                          <a href="#">Roon.io</a>
+                          <a href="#">配置文件</a>
+                          <a href="#">又拍云存储</a>
+                          <a href="#">上传</a>
+                          <a href="#">Handlebars</a>
+                          <a href="#">邮件</a>
+                          <a href="#">快捷键</a>
+                          <a href="#">用户指南</a>
+                          <a href="#">主题市场</a>
+                          <a href="#">新版本发布</a>
+                          <a href="#">...</a>
+                      </div>
+                    </div>
+                    <div class="panel col-md-4 col-xs-12">
+                      <div class="panel-heading center-block">Panel heading without title</div>
+                      <div role="separator" class="divider"></div>
+                      <div class="panel-body panelBtn">
+                        <a class="btn btn-warning" href="#" role="button">Ghost 中文版(0.7.4)</a>
+                      </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+        <script src="../js/jquery-1.12.1.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script type="text/javascript">
+          $(function(){
+              $(' #left .jumbotron .btn').mouseover(function(){
+                  $(this).css('background-color','#000');
+                  $(this).css('border-color','#000');
+              }).mouseout(function(){
+                   $(this).css('background-color','#F0AD4E');
+                  $(this).css('border-color','#F0AD4E');
+              })
+
+              $('#right .panel .panel-body .btn').mouseover(function(){
+                  $(this).css('background-color','#000');
+                  $(this).css('border-color','#000');
+              }).mouseout(function(){
+                   $(this).css('background-color','#F0AD4E');
+                  $(this).css('border-color','#F0AD4E');
+              })
+
+              $('.manyA a').mouseover(function(){
+                  $(this).css('background-color','#F0AD4E');
+                  $(this).css('border-color','#F0AD4E');
+                  $(this).css('color','#fff');
+              }).mouseout(function(){
+                  var bgColor = $(this).parent().css('background-color');
+                  console.log(bgColor);
+                  $(this).css('background-color',bgColor);
+                  $(this).css('border-color','#ebebeb');
+                  $(this).css('color','#959595');
+              })
+          })
+    </script>
+  </body>
+</html>
